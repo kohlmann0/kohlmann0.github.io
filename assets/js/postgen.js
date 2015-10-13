@@ -35,7 +35,7 @@ function getdate(){
 
 function post(){
   //var urlLocal = "entries.json"
-  var urlRemote = "https://mkohlmann-he.github.io/entries.json"
+  var urlRemote = "https://kohlmann0.github.io/entries.json"
   var jsonField = ('{"entries":['  + '<br />');
   $.getJSON(urlRemote, function(data) {
     $.each(data.entries, function(key, val) {

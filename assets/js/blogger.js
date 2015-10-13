@@ -1,5 +1,5 @@
 
-var entriesURL = "https://mkohlmann-he.github.io/entries.json"
+var entriesURL = "https://kohlmann0.github.io/entries.json"
 // var entriesURL ="..\..\entries.json"
 
 
