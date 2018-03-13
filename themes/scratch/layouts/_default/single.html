@@ -1,0 +1,11 @@
+{{ partial "header" }}
+<div class="row">
+
+	{{ partial "sidebar"}}
+	
+	<div id="contentList" class="col-sm-9"> 
+		<h2>{{ if .Params.ContentTitle }}{{ .Params.ContentTitle }}{{ end }}</h2>
+		<div>{{ .Content }}</div>
+	</div>
+</div> <!--row-->
+{{ partial "footer" }}
