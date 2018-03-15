@@ -1,12 +1,15 @@
 baseURL = "http://kohlmann0.github.io/"
 languageCode = "en-us"
-title = "Michael Kohlmann"
+Title = "Michael Kohlmann"
 theme = "scratch"
+
 [taxonomies]
 	tag = "tags"
 	category = "categories"
 	language = "languages"
 	environment = "environments"
+	
 [params]
 	titleBarTitle = "Michael Kohlmann | HUGO TEST"
 	sideBarTitle = "SideBarTitle"
+	Brand = "MRK"

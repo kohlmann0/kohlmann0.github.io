@@ -1,15 +1,12 @@
-{{ partial "header" }}
+{{ partial "header" . }}
 <div class="row">
 
-	{{ partial "sidebar"}}
-	
 	<div id="contentList" class="col-sm-9"> 
 		<h2>{{ if .Params.ContentTitle }}{{ .Params.ContentTitle }}{{ end }}</h2>
 		<div>{{ .Content }}</div>
 		<div>
 			{{ range .Pages }}
-				<!-- This is the default arrangement from Giraffe Academy - Modify it when you get time -->
-				<div style="border: 1px solid black; margin:10px; padding:10px; ">
+				<div style="margin:10px; padding:10px; ">
 				   <div style="font-size:20px;">
 						<a href="{{.URL}}">{{.Title}}</a>
 				   </div>
@@ -20,7 +17,6 @@
 
 				   <p style="font-size:18px;">{{.Summary}}</p>
 				</div>
-				<!-- End Giraffe Academy Template -->
 			{{ end }}	
 		</div>
 	</div>
