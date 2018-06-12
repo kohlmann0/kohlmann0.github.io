@@ -1,4 +1,4 @@
-<nav class="navbar navbar-default">
+<nav class="navbar navbar-default navbar-fixed-top">
   <div class="container-fluid">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
@@ -8,7 +8,7 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="#">{{ $.Site.Params.Brand }}</a>
+      <a class="navbar-brand" href="/index.html">{{ $.Site.Params.Brand }}</a>
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
@@ -23,7 +23,7 @@
 	  {{ if eq .Type "blog" }}
 	  <script>
 		function doSomething() {
-			alert('TODO: How do I "Search" other static pages from a single page?? This might not actually work.');
+			alert('Sorry, still working out an efficient way to search static files -- will get back to this in time.');
 			return false;
 		}
 	  </script>

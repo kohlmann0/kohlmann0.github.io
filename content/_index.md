@@ -1,7 +1,6 @@
 ---
-title: "Home"
+title: "Michael Kohlmann"
 date: 2018-01-27T17:21:42-06:00
-draft: true
+draft: False
 ---
 
-<H1> Landing Page </H1>
