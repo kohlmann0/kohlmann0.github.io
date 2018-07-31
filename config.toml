@@ -13,3 +13,6 @@ theme = "scratch"
 	titleBarTitle = "Michael Kohlmann | HUGO TEST"
 	sideBarTitle = "SideBarTitle"
 	Brand = "MK"
+
+[blackfriday] 
+	hrefTargetBlank = true

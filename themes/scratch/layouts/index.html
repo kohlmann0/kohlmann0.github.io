@@ -5,15 +5,15 @@
     <div class="row">
 	  <div class="col-sm-3"></div>
       <div class="col-sm-6">
-        <div class="panel panel-default text-center home-inner">
-			<h1>Michael Kohlmann</h1>
-			<h4>Engineer.
-			Developer.
-			Problem Solver.
-			</h4>
-			<h2><a href="#services" class="btn btn-lg">Services</a>
-			<a href="#blog" class="btn btn-lg">Blog</a>
-			<a href="/about" class="btn btn-lg">About</a></h2>
+        <div class="panel panel-default text-center home-inner color-secondary">
+          <h1>Michael Kohlmann</h1>
+          <h4>Engineer.
+          Developer.
+          Problem Solver.
+          </h4>
+          <h2 class="color-secondary"><a href="#services" class="btn btn-lg">Services</a>
+          <a href="#blog" class="btn btn-lg">Blog</a>
+          <a href="/about" class="btn btn-lg">About</a></h2>
         </div>
       </div>      
     </div>
@@ -21,7 +21,7 @@
 </div>
 <!-- /Home -->
 <!-- Services Section -->
-<div id="services" class="pad-section">
+<div id="services" class="pad-section color-primary">
   <div class="container">
     <h2 class="text-center">Services</h2> <hr />
     <div class="row text-center">
@@ -65,32 +65,19 @@
 	  <div class="col-xs-12">
 		<div class="panel panel-default text-center">
 		  <div class="panel-heading">
-			<h3>Latest from the Blog</h3>
+			<h3>Latest from the <a href="/blog">Blog</a></h3>
 		  </div>
 	    </div>
 	  </div>
 	</div>
 	<div class="row">
-      <div class="col-sm-6">
-        <div class="panel panel-default">
-          <div class="panel-heading">
-            <h2 class="panel-title">Chocolately - An Introduction</h2>
-          </div>
-          <div class="panel-body lead">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed hendrerit adipiscing blandit. Aliquam placerat, velit a fermentum fermentum, mi felis vehicula justo, a dapibus quam augue non massa. Duis euismod, augue et tempus consequat, lorem mauris porttitor quam, consequat ultricies mauris mi a metus. Phasellus congue, leo sed ultricies tristique, nunc libero tempor ligula, at varius mi nibh in nisi. Aliquam erat volutpat. Maecenas rhoncus, neque facilisis rhoncus tempus, elit ligula varius dui, quis amet.
-          </div>
-        </div>
-      </div>
-      <div class="col-sm-6">
-        <div class="panel panel-default">
-          <div class="panel-heading">
-            <h2 class="panel-title">Hugo - An Introduction</h2>
-          </div>
-          <div class="panel-body lead">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed hendrerit adipiscing blandit. Aliquam placerat, velit a fermentum fermentum, mi felis vehicula justo, a dapibus quam augue non massa. Duis euismod, augue et tempus consequat, lorem mauris porttitor quam, consequat ultricies mauris mi a metus. Phasellus congue, leo sed ultricies tristique, nunc libero tempor ligula, at varius mi nibh in nisi. Aliquam erat volutpat. Maecenas rhoncus, neque facilisis rhoncus tempus, elit ligula varius dui, quis amet.
-          </div>
-        </div>
-      </div>
+    {{ range first 2 .Data.Pages }}
+    <div class="col-sm-6">  
+      <a href="{{.URL}}">
+        {{ partial "blogPreview" . }} 
+      </a>
+    </div>
+    {{ end }}
 	</div>
   </div>
 </div>

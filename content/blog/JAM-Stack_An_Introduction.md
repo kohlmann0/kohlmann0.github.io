@@ -1,61 +1,67 @@
 ---
-
 title: "JAM Stack_An_Introduction"
-
-date: 2018-03-13T14:07:37-05:00
-
-draft: true
-
+date: 2018-07-30
+draft: false
 ---
 
+# The JAM Stack #
+
+What is the Jam Stack, and how does it differ from other technology stacks like "LAMP" or "MEAN"?
 
 
-#The Jam Stack
+## First - What the heck are we even talking about?! ##
+For starters, if you are relatively new to hosting a website yourself, when I refer to the "Stack" I mean how it is hosted and the technologies used in coding it.
 
-What is the Jam Stack, and how does it differ from other technology stacks?
+*   __J__ - JavaScript
+*   __A__ - API's
+*   __M__ - Markdown or Markup
 
+For comparison, to another popular stack, when people refer to a __LAMP__ stack, they mean the technologies of 
 
+* __L__inux OS 
+* __A__pache http server  
+* __M__ySQL database 
+* __P__HP backend server logic. 
 
-###First... what does JAM stand for?
+<!--more-->
 
-J - JavaScript
+Or, alternatively a __MEAN__ stack is 
 
-A - API's
+* __M__ongoDB 
+* __E__xpressJS 
+* __A__ngularJS
+* __N__odeJS. 
 
-M - Markdown or Markup
+How did it get the name JAM Stack? There isn't an exact definition to how these stacks get named, it's usually just a set of letters to form a catchy phrase.
 
+Unlike technology stacks that do server side rendering (like asp.net, PHP, Java, that have code to generate webpage content on the fly), the Jam Stack is all static HTML, CSS, and Javascript files, served up as soon as they are requested, without any additional processing on the server. If there is any dynamic content it's done with JavaScript making API calls to get additional content in a second round-trip call. 
 
+But don't let that second round trip worry you. The time fron the initial call to the first page render is super fast, making your site seem fast and responsive. It's great for things "Above the Fold", and then you can lazy load the remaining data as needed. It's also great for things that rarely change, like product and service descriptions, menu's, contact information, etc. It's weak for anything personalized to a specific user, like shopping cart data, or user profiles (at least on first load). It can sometimes make it a little easier to cache pages for a great off-line experience as well.
 
-Unlike some technology stacks that run server side code to generate a page (like asp.net, PHP, or Java), the Jam Stack is all client side code. Meaning it's all static HTML pages, with JavaScript making calls to API's doing any dynamic content it needs. That doesn't mean you can't still static site generators to template and build pages from components, but the end result is a file, just like any other HTML file, that gets served up from the server. The difference is that it's all pre-built, not generated server-side on the fly.
+### API's ###
+One thing to note is that it is a little bit of a cheat to say that there is no server side code, because the API backend that the javascript calls is obviously server side code. 
 
+Just for an exmaple, you can hook into some great API's like Google Maps, Google Analytics, Facebook, Twitter, Amazon, SoundCloud, etc. Or, ones that you create yourself.
 
-
-###Here's an example...
-
-This site itself is considered a JAM Stack. I use a static site generator called Hugo. I created several template files to create a common layout of for this blog, and then markdown files to write the content quicker than I can in markup. Then Hugo compiles the to into individual HTML, JavaScript and CSS files. Then I commit it to Github which serves up the files for free at kohlmann0.github.io. One advantage to this, is that Netlify.com will give you a custom domain name for free, and github will take this, and serve up your website, under your new custom domain, like www.michaelkohlmann.com.
-
-
-
-All completely free, expandable, and still dynamic through JavaScript and Dom manipulation.
-
-
-
-###Some tips and tricks from building this site...
-
-With HUGO and writing in Markdown, it's just faster to focus on the writing, rather than worrying about all the HTML tags, and avoid problems with missed closing tags, css, etc. If you get it setup well the first time, every time after that is simply exploring what you want to say, rather than nit-picking the code, or how it looks. It will look the same (hopefully great) every time.
-
-
-
-With HUGO, you have the ability to create "partials", which is exactly as it sounds. Basically modular components, that you can reuse whenever you want. Helps you with the best practice of Don't Repeat Yourself. Write it once and reuse it everywhere... HUGO will insert it wherever it needs to go... just keep in mind your opening and closing tags. Try to keep them matched, within the same partial, or you'll have to remember to close it later in your code.
+The big difference here is when and where the HTML webpage is rendered. JAM stack pages can be either hand-coded HTML pages or pre-compiled HTML templates (more on this later), but the end result is static file that sits on a webserver just like any other file. The request and turn around is about as fast as you can possibly be, to get content on the screen. Other stacks will sometimes take the request, hit the database for information, process it, generate the text of a webpage... all that before even sending the first byte back to the client.
 
 
+### Here's an example ###
+This site itself is considered a JAM Stack. I use a "Static Site Generator" called Hugo. Jekyll is another popular example for linux and Mac, built on Ruby.
 
-Hugo gives you a local build server which is great for debugging and seeing what the final result will be, before you commit it to github. What's awesome is that it monitors changes within your site, as you are coding, and rebuilds it automatically whenever it sees a saved change. You don't have to manually rebuild your changes every time. The rebuild times are super fast too. Like 25ms, because it's only updating the difference, not the whole site.
+* I created several template files (partials or modules) to create a common layout.
+* I then use markdown to write the actual content, quicker than I could in raw HTML. 
+* Then Hugo takes the template and content and compiles it into individual HTML, JavaScript and CSS files. 
+* Then I commit it to Github which serves up the files for free at kohlmann0.github.io. 
 
+One advantage to this, is because public Github repositories are free, and because Netlify.com will give you a custom domain name for free, this is all completely free, expandable, and still dynamic through JavaScript to make it seem like any other site.
 
+I'd like to talk a bit more about Hugo, Javascript and tips and tricks to give it some dynamic content, so stay tuned for later posts, which I will eventually link below.
 
-With Travis C.I. (Continuous Integration) you can have your website rebuilt every time you check in changes to github. Travis monitors your repository, and then rebuilds it. What's awesome about that is that you don't have to have your Development machine with you, in order to update your site. You know how you can edit a markdown file right on the github site? Find your minor change, update it where ever, commit the change, and the whole site will compile and rebuild... Also, it's free! How can you go wrong?
+## Some useful links ##
 
-
-
-###Javascript, API's and Dom manipulation make it dynamic..
+* [Jamstack.Org](http://jamstack.org) - full of useful resource, best practices, and examples.
+* [Static Site Generators](http://www.staticgen.com/)
+* [Github](http://www.github.com) - for hosting your source code.
+* [Netlify](http://www.netlify.com) - for providing you with a free domain name, and linking it to your github account.
+* [Travis CI](http://www.Travis-ci.org) or something similar... this one is a give or take. You don't really need it, but it can be useful. You really only need it if you need a special step to build your code when your not on your main build machine.

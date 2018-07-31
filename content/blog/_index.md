@@ -1,9 +1,6 @@
 ---
-title: "Blog"
-date: 2018-01-27T19:04:05-06:00
-draft: true
-templateType: "List"
-SideBarTitle: "Blog Page"
+title: "Michael Kohlmann"
+date: 2018-01-27T17:21:42-06:00
+draft: False
 ---
 
-Content of the "Blog" _index page
