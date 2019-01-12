@@ -10,6 +10,8 @@ Today I was trying to get something that looked nice as a "Preview" box that fad
 
 I found this extremely useful tip on Stack exchange [here](https://stackoverflow.com/questions/22666063/how-to-fade-the-edge-of-a-div-with-just-css), but I thought it might be nice (for myself later) to explain what exactly is going on.
 
+<!--more-->
+
 <code>
 .fadeOutDiv {
   border   : 1px #d8d8d8 dashed;

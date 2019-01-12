@@ -17,3 +17,5 @@ So instead of it being:
 it really ends up being:
 ~/layouts/_defaults/blog.html --> ~/blog/index.html
 ~/layouts/_defaults/services.html --> ~/service/index.html
+
+<!--more-->

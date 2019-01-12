@@ -1,36 +1,68 @@
 {{ partial "header" . }}
 {{ partial "jumbotron" . }}
-<div class="row">
-		<div class="col-sm-2"></div>
-		<div id="contentList" class="col-sm-8">  
-		<h2>{{ if .Params.ContentTitle }}{{ .Params.ContentTitle }}{{ end }}</h2>
-		<div>{{ .Content }}</div>
-		<div>
-			<!-- <div class="row">
-                {{ range .Data.Pages }}
-                <div class="col-xs-12">  
-                    <a href="{{.URL}}">
-                    {{ partial "blogPreview" . }} 
-                    </a>
-                </div>
-                {{ end }}
-            </div> -->
-			{{ range .Pages }}
-				<div style="margin:10px; padding:10px; ">
-				   <div >
-						<a href="{{.URL}}">{{.Title}}</a>
-				   </div>
-				   <div style="color:grey; font-size:16px;">{{ dateFormat "Monday, Jan 2, 2006" .Date }}</div>
-				   <div style="color:grey; font-size:16px;">{{ if .Params.tags }}<strong>Tags:</strong> {{range .Params.tags}}<a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}">{{ . }}</a> {{end}}{{end}}</div>
-				   <div style="color:grey; font-size:16px;">{{ if .Params.categories }}<strong>Categories:</strong> {{range .Params.categories}}<a href="{{ "/categories/" | relLangURL }}{{ . | urlize }}">{{ . }}</a> {{end}}{{end}}</div>
-				   <div style="color:grey; font-size:16px;">{{ if .Params.moods }}<strong>Moods:</strong> {{range .Params.moods}}<a href="{{ "/moods/" | relLangURL }}{{ . | urlize }}">{{ . }}</a> {{end}}{{end}}</div>
 
-				   <p style="font-size:18px;">{{.Summary}}</p>
+<div id="services" class="pad-section color-secondary">
+	<div class="container">
+	  <h2 class="text-center">Services</h2> <hr />
+			<div class="row">
+				<div class="col-xs-none col-sm-2">					
+				</div> <!-- Left Padding-->
+				<div class="col-xs-4 col-sm-2">
+					<a href="software">
+						<i class="fas fa-code fa-5x"> </i>
+						<h4>Software</h4>
+					</a>
+				</div>			
+				<div class="col-xs-6 col-sm-8">
+					Custom software architecture, engineering, and design
 				</div>
-			{{ end }}	
-		</div>
-    </div>
-    
-    </div>
-</div> <!--row-->
+			</div>
+
+			<div class="row">
+				<div class="col-xs-none col-sm-2">					
+				</div> <!-- Left Padding-->
+				<div class="col-xs-4 col-sm-2">
+					<a href="mechanical">
+						<i class="fas fa-cog fa-5x"> </i>
+						<h4>Mechanical</h4>
+					</a>
+				</div>			
+				<div class="col-xs-6 col-sm-8">
+					<p>Mechanical engineering, drafting/modeling, and rapid prototyping</p>				
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-xs-none col-sm-2">					
+				</div> <!-- Left Padding-->
+				<div class="col-xs-4 col-sm-2">
+					<a href="robotics">
+						<i class="fas fa-industry fa-5x"> </i>
+						<h4>Automation/Robotics</h4>
+					</a>
+				</div>			
+				<div class="col-xs-6 col-sm-8">
+					<p>Custom industrial automation and robotics</p>				
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-xs-none col-sm-2">					
+				</div> <!-- Left Padding-->
+				<div class="col-xs-4 col-sm-2">
+					<a href="management">
+						<i class="fas fa-project-diagram fa-5x"> </i>
+						<h4>Management</h4>
+					</a>
+				</div>			
+				<div class="col-xs-6 col-sm-8">
+					<p>Project and Team management</p>				
+				</div>
+			</div>
+
+	  	</div>
+	</div>
+</div>
+
+</div> <!--end of previous partial , so footer fills width--> 
 {{ partial "footer" }}

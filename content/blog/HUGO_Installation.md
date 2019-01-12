@@ -13,3 +13,5 @@ The second time I decided to try the instructions for [Installing on Windows]().
 The problem I ran into was that I couldn't get the PATH to stay. When I restarted the machine, or closed the windows command line window and reopen it, it would forget it's path to the Hugo install.
 
 What ended up working for me instead was manually adding it via the Path's UI in windows.
+
+<!--more-->

@@ -6,9 +6,18 @@
 		<h2>{{ if .Params.ContentTitle }}{{ .Params.ContentTitle }}{{ end }}</h2>
 		<div>{{ .Content }}</div>
 		<div>
+			<div class="row">
+						{{ range first 2 .Data.Pages }}
+						<div class="col-sm-6">  
+						  <a href="{{.URL}}">
+							{{ partial "blogPreview" . }} 
+						  </a>
+						</div>
+						{{ end }}
+						</div>
 			{{ range .Pages }}
 				<div style="margin:10px; padding:10px; ">
-				   <div style="font-size:20px;">
+				   <div >
 						<a href="{{.URL}}">{{.Title}}</a>
 				   </div>
 				   <div style="color:grey; font-size:16px;">{{ dateFormat "Monday, Jan 2, 2006" .Date }}</div>

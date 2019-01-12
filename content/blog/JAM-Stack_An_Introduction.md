@@ -1,5 +1,5 @@
 ---
-title: "JAM Stack_An_Introduction"
+title: "JAM Stack -- An Introduction"
 date: 2018-07-30
 draft: false
 ---
@@ -12,6 +12,8 @@ What is the Jam Stack, and how does it differ from other technology stacks like 
 ## First - What the heck are we even talking about?! ##
 For starters, if you are relatively new to hosting a website yourself, when I refer to the "Stack" I mean how it is hosted and the technologies used in coding it.
 
+<!--more-->
+
 *   __J__ - JavaScript
 *   __A__ - API's
 *   __M__ - Markdown or Markup
@@ -23,7 +25,6 @@ For comparison, to another popular stack, when people refer to a __LAMP__ stack,
 * __M__ySQL database 
 * __P__HP backend server logic. 
 
-<!--more-->
 
 Or, alternatively a __MEAN__ stack is 
 
