@@ -39,6 +39,9 @@ html, body {
 }
 #services {
 }
+#single-services {
+  margin-top: 15px;
+}
 
 #services .glyphicon {
   border: 2px solid #FFFFFF;
@@ -70,6 +73,7 @@ html, body {
 }
 footer {
   padding: 20px 0;
+  margin-top: 30px;
 }
 footer .glyphicon {
   color: #333333;

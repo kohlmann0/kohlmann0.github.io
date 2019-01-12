@@ -15,10 +15,10 @@
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 	
       <ul class="nav navbar-nav">
-	  {{ if eq .Type "service" }}<li class="active"><a href="#">Services<span class="sr-only">(current)</span></a></li>{{else}}<li><a href="/service">Services</a></li>{{ end }}	  
-	  {{ if eq .Type "blog" }}<li class="active"><a href="#">Blog<span class="sr-only">(current)</span></a></li>{{else}}<li><a href="/blog">Blog</a></li>{{ end }}	  
-	  {{ if eq .Type "about" }}<li class="active"><a href="#">About<span class="sr-only">(current)</span></a></li>{{else}}<li><a href="/about">About</a></li>{{ end }}
-    {{ if eq .Type "contact" }}<li class="active"><a href="#">Contact<span class="sr-only">(current)</span></a></li>{{else}}<li><a href="/contact">Contact</a></li>{{ end }}
+	  {{ if eq .Type "service" }}<li class="active"><a href="/service">Services<span class="sr-only">(current)</span></a></li>{{else}}<li><a href="/service">Services</a></li>{{ end }}	  
+	  {{ if eq .Type "blog" }}<li class="active"><a href="/blog">Blog<span class="sr-only">(current)</span></a></li>{{else}}<li><a href="/blog">Blog</a></li>{{ end }}	  
+	  {{ if eq .Type "about" }}<li class="active"><a href="/about">About<span class="sr-only">(current)</span></a></li>{{else}}<li><a href="/about">About</a></li>{{ end }}
+    {{ if eq .Type "contact" }}<li class="active"><a href="/contact">Contact<span class="sr-only">(current)</span></a></li>{{else}}<li><a href="/contact">Contact</a></li>{{ end }}
       </ul>
 	  
 	  {{ if eq .Type "blog" }}
