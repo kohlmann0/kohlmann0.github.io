@@ -1,4 +1,4 @@
-#Michael Kohlmann
+# Michael Kohlmann
 
 
 
@@ -6,7 +6,7 @@ This is an experiment in building and hosting an ultra-cheap website. The goal i
 
 
 
-##Current Technologies and Tool Chains
+## Current Technologies and Tool Chains
 
 Hosting Stack: JAM Stack
 
