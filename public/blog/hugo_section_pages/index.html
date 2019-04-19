@@ -1,0 +1,156 @@
+<html lang="en">
+<head>
+  <title>Michael Kohlmann</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="/css/scratch.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
+
+  
+  
+</head> 
+<body> 
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container-fluid">
+    
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/index.html">MK</a>
+    </div>
+
+    
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+	
+      <ul class="nav navbar-nav">
+	  <li><a href="/service">Services</a></li>	  
+	  <li class="active"><a href="/blog">Blog<span class="sr-only">(current)</span></a></li>	  
+	  <li><a href="/about">About</a></li>
+    <li><a href="/contact">Contact</a></li>
+      </ul>
+	  
+	  
+	  <script>
+		function doSomething() {
+			alert('Sorry, still working out an efficient way to search static files -- will get back to this in time.');
+			return false;
+		}
+	  </script>
+      <ul class="nav navbar-nav navbar-right">
+		  <form class="navbar-form navbar-right" onsubmit="return doSomething();">
+			<div class="form-group">
+			  <input type="text" class="form-control" placeholder="Search Blog">
+			</div>
+			<button type="submit" class="btn btn-default">Submit</button>
+		  </form>
+      </ul>
+	  
+    </div>
+  </div>
+</nav>
+
+
+<div class="jumbotron text-center color-primary">
+  <p><h1>Michael Kohlmann</h1></p>
+  <p><h2>Engineer, Developer, Problem Solver</h2></p>
+</div>  
+<div class="container">
+<div class ="container">
+	<div class="row">
+		<div class="col-sm-2"></div>
+			<div id="contentList" class="col-sm-8"> 
+				<h2></h2>
+				<div><p>Place holder &ndash;
+So this is really dumb, but it looks like the file structure for making section pages (ie. the base page for the &ldquo;blog&rdquo; or base page for &ldquo;services&rdquo;) does not go exactly as you would expect.</p>
+
+<p>Where the homepage goes in ~/layouts/index.html</p>
+
+<p>The sections go under the _defaults folder, instead of the &ldquo;section&rdquo; folder like I would expect.
+So instead of it being:
+~/layouts/blog/index.html like the main page</p>
+
+<p>it really ends up being:
+~/layouts/_defaults/blog.html &ndash;&gt; ~/blog/index.html
+~/layouts/_defaults/services.html &ndash;&gt; ~/service/index.html</p>
+
+<p></p></div>
+			</div>
+		</div>
+	</div> 
+</div> 
+
+      
+      <footer class="page-footer font-small pt-4 mt-4 top-buffer color-primary"> 
+          <hr class="w-100 clearfix d-md-none">
+      
+          
+          <div class="container text-md-left">
+      
+              
+              <div class="row text-md-left mt-3 pb-3">
+      
+                  
+                  <div class="col-md-4 col-lg-4 col-xl-4 mx-auto mt-4 text-center">
+                      <h6 class="text-uppercase mb-4 font-weight-bold">Michael Kohlmann</h6>
+					  <ul style="list-style-type:none; padding-left: 0;">
+						<li class="list-inline-item">Engineer</li>
+						<li class="list-inline-item">Developer</li>
+						<li class="list-inline-item">Problem Solver</li>
+					  </ul>
+                  </div>
+                  
+      
+      
+                  
+                  <div class="col-md-4 col-lg-4 col-xl-4 mx-auto mt-4 text-center">
+                      <h6 class="text-uppercase mb-4 font-weight-bold"><a href="/services">Services</a></h6>
+                      <h6 class="text-uppercase mb-4 font-weight-bold"><a href="/blog">Blog</a></h6>                      
+                      <h6 class="text-uppercase mb-4 font-weight-bold"><a href="/about">About</a></h6>
+                  </div>
+                  
+      
+                  
+                  <div class="col-md-4 col-lg-4 col-xl-4 mx-auto mt-4 text-center">
+                      <h6 class="text-uppercase mb-4 font-weight-bold">Contact</h6>
+					  <ul style="list-style-type:none; padding-left: 0;">
+						<li class="list-inline-item"><i class="fa fa-home mr-3"></i> Milwaukee, WI, USA</li>
+						<li class="list-inline-item"><a href="https://www.linkedin.com/in/michael-kohlmann-1141305/"><i class="fab fa-linkedin-in mr-3"></i> LinkedIn</a></li>
+					  </ul>
+                  </div>
+                  
+      
+              </div>
+              
+      
+              <hr>
+      
+              <div class="row py-3 d-flex align-items-center">
+      
+                  
+                  <div class="col-md-12 col-lg-12">
+      
+                      					  
+                      <p class="text-center text-md-left grey-text">Content and Layout by <strong>Michael Kohlmann</strong></p>
+					  <p class="text-center text-md-left grey-text">Theme by <a href="https://mdbootstrap.com/material-design-for-bootstrap/"><strong> MDBootstrap.com</strong></a> © 2018 Copyright</p>
+                      <p class="text-center text-md-left grey-text">Icons by <a href="https://fontawesome.com/"><strong> FontAwesome.com</strong></a> © 2018 Copyright</p>
+                      
+      
+                  </div>
+                  
+              </div>
+      
+          </div>
+      
+      </footer>
+      
+</body>
+</html>

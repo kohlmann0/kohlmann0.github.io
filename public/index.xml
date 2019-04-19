@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Michael Kohlmann</title>
+    <link>http://kohlmann0.github.io/</link>
+    <description>Recent content on Michael Kohlmann</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 27 Jan 2018 17:21:42 -0600</lastBuildDate>
+    
+	<atom:link href="http://kohlmann0.github.io/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>JAM Stack -- An Introduction</title>
+      <link>http://kohlmann0.github.io/blog/jam-stack_an_introduction/</link>
+      <pubDate>Mon, 30 Jul 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://kohlmann0.github.io/blog/jam-stack_an_introduction/</guid>
+      <description>&lt;h1 id=&#34;the-jam-stack&#34;&gt;The JAM Stack&lt;/h1&gt;
+
+&lt;p&gt;What is the Jam Stack, and how does it differ from other technology stacks like &amp;ldquo;LAMP&amp;rdquo; or &amp;ldquo;MEAN&amp;rdquo;?&lt;/p&gt;
+
+&lt;h2 id=&#34;first-what-the-heck-are-we-even-talking-about&#34;&gt;First - What the heck are we even talking about?!&lt;/h2&gt;
+
+&lt;p&gt;For starters, if you are relatively new to hosting a website yourself, when I refer to the &amp;ldquo;Stack&amp;rdquo; I mean how it is hosted and the technologies used in coding it.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Chocolatey -- An Introduction</title>
+      <link>http://kohlmann0.github.io/blog/chocolatey_an_introduction/</link>
+      <pubDate>Thu, 28 Jun 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://kohlmann0.github.io/blog/chocolatey_an_introduction/</guid>
+      <description>&lt;h1 id=&#34;chocolatey&#34;&gt;Chocolatey&lt;/h1&gt;
+
+&lt;p&gt;What is it, what does it do, and how can it help me as a developer?&lt;/p&gt;
+
+&lt;h2 id=&#34;what-it-is&#34;&gt;What it is&lt;/h2&gt;
+
+&lt;p&gt;Chocolatey, despite its candy coated name, is one of the first package managers I&amp;rsquo;ve seen for the Windows environment. If you are familiar with Linux, python, or Node.JS, you&amp;rsquo;ve probably used a package manager before, with commands like&amp;hellip;&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>HUGO_An_Introduction</title>
+      <link>http://kohlmann0.github.io/blog/hugo_an_introduction/</link>
+      <pubDate>Tue, 13 Mar 2018 14:08:04 -0500</pubDate>
+      
+      <guid>http://kohlmann0.github.io/blog/hugo_an_introduction/</guid>
+      <description>Hugo - An Introduction Hugo is what is typically called a &amp;ldquo;Static Site Generator&amp;rdquo;. Basically it takes a bunch of modular components and forms a single HTML file out of reusable pieces.
+If you are familiar with modern technology stacks like PHP, Java, or ASP.Net that build up an HTML document on the fly on the server side, think of a static site generator as something similar, except that it is pre-compiled at build time, and placed on the server as a complete HTML file.</description>
+    </item>
+    
+    <item>
+      <title>About</title>
+      <link>http://kohlmann0.github.io/about/</link>
+      <pubDate>Sat, 27 Jan 2018 18:59:51 -0600</pubDate>
+      
+      <guid>http://kohlmann0.github.io/about/</guid>
+      <description>Software Developer I am currently a Software Developer based out of Milwauke, Wisconsin, USA. My day-to-day development is in enterprise backend web development for Trisept Solutions.
+Previously, I worked as an Industrial Automation Engineer designing, installing and programming factory assembly lines, Programmable logic controllers (PLC&amp;rsquo;s), and robots.
+As a Mechanical Engineer, I designed one-off custom parts and prototypes in steel, aluminum, and plastics to be machined, formed, molded, and welded.</description>
+    </item>
+    
+    <item>
+      <title>Contact</title>
+      <link>http://kohlmann0.github.io/contact/</link>
+      <pubDate>Sat, 27 Jan 2018 18:59:51 -0600</pubDate>
+      
+      <guid>http://kohlmann0.github.io/contact/</guid>
+      <description>I am based out of Milwaukee, WI, USA, with easy access to the world through Mitchell International Airport.
+Contact me directly is via. Linked-in.
+ Michael Kohlmann  </description>
+    </item>
+    
+    <item>
+      <title>Industrial Automation and Robotics</title>
+      <link>http://kohlmann0.github.io/service/robotics/</link>
+      <pubDate>Sat, 27 Jan 2018 18:59:04 -0600</pubDate>
+      
+      <guid>http://kohlmann0.github.io/service/robotics/</guid>
+      <description>Mobile / Personal Robotics Mobile robotics is my current major interest. I am actively seeking opportunities to work with individuals and companies building UAV, UGV, articulated humanoid, and driverless systems.
+Industrial Robotics Custom industrial automation and robotics is where I started. Over 15 years, I&amp;rsquo;ve designed, installed, and programmed well over 20 custom automation systems. From small pick and place assembling units, to entire conveyor lines.
+Major Customers:
+ Harley Davidson GKN Sinter Metals Huf North America Muth Mirror Systems Andis Company  Preferred Robot Suppliers:</description>
+    </item>
+    
+    <item>
+      <title>Mechanical Engineering</title>
+      <link>http://kohlmann0.github.io/service/mechanical/</link>
+      <pubDate>Sat, 27 Jan 2018 18:59:04 -0600</pubDate>
+      
+      <guid>http://kohlmann0.github.io/service/mechanical/</guid>
+      <description>Mechanical Engineering I have worked professionally and designed parts for most manufacturing technologies including milling, grinding, sheet metal forming, plastic and rubber molding, laser and water-jet cutting.
+Over the course of my career, I held the position of Mechanical Engineer, Manufacturing Engineer, Robotics Engineer, and my responsibilities have included everything from design and drafting, to machining and installation, to Continuous Improvement and Supply chain management.
+Certifications  Certified SolidWorks Professional through CATI (2002), and continued to use SolidWorks daily up until 2015.</description>
+    </item>
+    
+    <item>
+      <title>Project and Team Management</title>
+      <link>http://kohlmann0.github.io/service/management/</link>
+      <pubDate>Sat, 27 Jan 2018 18:59:04 -0600</pubDate>
+      
+      <guid>http://kohlmann0.github.io/service/management/</guid>
+      <description>Whether you need a technical lead, or a project/personnel team lead, I&amp;rsquo;ve managed several small teams through out my career, both officially and unofficially.
+I&amp;rsquo;ve been a direct customer contact, and a direct supplier contact. I&amp;rsquo;ve presented solutions to clients, and oversaw installations of million dollar robotic systems.
+Preferred Project Tracking Systems:
+ Team Foundation Server (professionally) Trello (free use) TrelloGantt (free use)  Contact me to discuss your needs.</description>
+    </item>
+    
+    <item>
+      <title>Software Development</title>
+      <link>http://kohlmann0.github.io/service/software/</link>
+      <pubDate>Sat, 27 Jan 2018 18:59:04 -0600</pubDate>
+      
+      <guid>http://kohlmann0.github.io/service/software/</guid>
+      <description>Industries Professionally, I currently work in the Leisure Travel space, creating website for major vacation suppliers. I work daily in the back-end, converting an old COBOL mainframe codebase to a modern Microsoft .NET technology stack. I typically work in the business logic of credit card processing, charter flight booking and availability, and our entire dynamic packaging engine in general.
+As a hobby, I tinker around with robotics, IOT, and some web development.</description>
+    </item>
+    
+    <item>
+      <title>Michael Kohlmann</title>
+      <link>http://kohlmann0.github.io/blog/hugo_section_pages/</link>
+      <pubDate>Sat, 27 Jan 2018 17:21:42 -0600</pubDate>
+      
+      <guid>http://kohlmann0.github.io/blog/hugo_section_pages/</guid>
+      <description>&lt;p&gt;Place holder &amp;ndash;
+So this is really dumb, but it looks like the file structure for making section pages (ie. the base page for the &amp;ldquo;blog&amp;rdquo; or base page for &amp;ldquo;services&amp;rdquo;) does not go exactly as you would expect.&lt;/p&gt;
+
+&lt;p&gt;Where the homepage goes in ~/layouts/index.html&lt;/p&gt;
+
+&lt;p&gt;The sections go under the _defaults folder, instead of the &amp;ldquo;section&amp;rdquo; folder like I would expect.
+So instead of it being:
+~/layouts/blog/index.html like the main page&lt;/p&gt;
+
+&lt;p&gt;it really ends up being:
+~/layouts/_defaults/blog.html &amp;ndash;&amp;gt; ~/blog/index.html
+~/layouts/_defaults/services.html &amp;ndash;&amp;gt; ~/service/index.html&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

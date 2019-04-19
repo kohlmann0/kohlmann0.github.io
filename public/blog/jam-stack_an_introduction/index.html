@@ -1,0 +1,214 @@
+<html lang="en">
+<head>
+  <title>JAM Stack -- An Introduction</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="/css/scratch.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
+
+  
+  
+</head> 
+<body> 
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container-fluid">
+    
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/index.html">MK</a>
+    </div>
+
+    
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+	
+      <ul class="nav navbar-nav">
+	  <li><a href="/service">Services</a></li>	  
+	  <li class="active"><a href="/blog">Blog<span class="sr-only">(current)</span></a></li>	  
+	  <li><a href="/about">About</a></li>
+    <li><a href="/contact">Contact</a></li>
+      </ul>
+	  
+	  
+	  <script>
+		function doSomething() {
+			alert('Sorry, still working out an efficient way to search static files -- will get back to this in time.');
+			return false;
+		}
+	  </script>
+      <ul class="nav navbar-nav navbar-right">
+		  <form class="navbar-form navbar-right" onsubmit="return doSomething();">
+			<div class="form-group">
+			  <input type="text" class="form-control" placeholder="Search Blog">
+			</div>
+			<button type="submit" class="btn btn-default">Submit</button>
+		  </form>
+      </ul>
+	  
+    </div>
+  </div>
+</nav>
+
+
+<div class="jumbotron text-center color-primary">
+  <p><h1>Michael Kohlmann</h1></p>
+  <p><h2>Engineer, Developer, Problem Solver</h2></p>
+</div>  
+<div class="container">
+<div class ="container">
+	<div class="row">
+		<div class="col-sm-2"></div>
+			<div id="contentList" class="col-sm-8"> 
+				<h2></h2>
+				<div><h1 id="the-jam-stack">The JAM Stack</h1>
+
+<p>What is the Jam Stack, and how does it differ from other technology stacks like &ldquo;LAMP&rdquo; or &ldquo;MEAN&rdquo;?</p>
+
+<h2 id="first-what-the-heck-are-we-even-talking-about">First - What the heck are we even talking about?!</h2>
+
+<p>For starters, if you are relatively new to hosting a website yourself, when I refer to the &ldquo;Stack&rdquo; I mean how it is hosted and the technologies used in coding it.</p>
+
+<p></p>
+
+<ul>
+<li><strong>J</strong> - JavaScript</li>
+<li><strong>A</strong> - API&rsquo;s</li>
+<li><strong>M</strong> - Markdown or Markup</li>
+</ul>
+
+<p>For comparison, to another popular stack, when people refer to a <strong>LAMP</strong> stack, they mean the technologies of</p>
+
+<ul>
+<li><strong>L</strong>inux OS</li>
+<li><strong>A</strong>pache http server<br /></li>
+<li><strong>M</strong>ySQL database</li>
+<li><strong>P</strong>HP backend server logic.</li>
+</ul>
+
+<p>Or, alternatively a <strong>MEAN</strong> stack is</p>
+
+<ul>
+<li><strong>M</strong>ongoDB</li>
+<li><strong>E</strong>xpressJS</li>
+<li><strong>A</strong>ngularJS</li>
+<li><strong>N</strong>odeJS.</li>
+</ul>
+
+<p>How did it get the name JAM Stack? There isn&rsquo;t an exact definition to how these stacks get named, it&rsquo;s usually just a set of letters to form a catchy phrase.</p>
+
+<p>Unlike technology stacks that do server side rendering (like asp.net, PHP, Java, that have code to generate webpage content on the fly), the Jam Stack is all static HTML, CSS, and Javascript files, served up as soon as they are requested, without any additional processing on the server. If there is any dynamic content it&rsquo;s done with JavaScript making API calls to get additional content in a second round-trip call.</p>
+
+<p>But don&rsquo;t let that second round trip worry you. The time fron the initial call to the first page render is super fast, making your site seem fast and responsive. It&rsquo;s great for things &ldquo;Above the Fold&rdquo;, and then you can lazy load the remaining data as needed. It&rsquo;s also great for things that rarely change, like product and service descriptions, menu&rsquo;s, contact information, etc. It&rsquo;s weak for anything personalized to a specific user, like shopping cart data, or user profiles (at least on first load). It can sometimes make it a little easier to cache pages for a great off-line experience as well.</p>
+
+<h3 id="api-s">API&rsquo;s</h3>
+
+<p>One thing to note is that it is a little bit of a cheat to say that there is no server side code, because the API backend that the javascript calls is obviously server side code.</p>
+
+<p>Just for an exmaple, you can hook into some great API&rsquo;s like Google Maps, Google Analytics, Facebook, Twitter, Amazon, SoundCloud, etc. Or, ones that you create yourself.</p>
+
+<p>The big difference here is when and where the HTML webpage is rendered. JAM stack pages can be either hand-coded HTML pages or pre-compiled HTML templates (more on this later), but the end result is static file that sits on a webserver just like any other file. The request and turn around is about as fast as you can possibly be, to get content on the screen. Other stacks will sometimes take the request, hit the database for information, process it, generate the text of a webpage&hellip; all that before even sending the first byte back to the client.</p>
+
+<h3 id="here-s-an-example">Here&rsquo;s an example</h3>
+
+<p>This site itself is considered a JAM Stack. I use a &ldquo;Static Site Generator&rdquo; called Hugo. Jekyll is another popular example for linux and Mac, built on Ruby.</p>
+
+<ul>
+<li>I created several template files (partials or modules) to create a common layout.</li>
+<li>I then use markdown to write the actual content, quicker than I could in raw HTML.</li>
+<li>Then Hugo takes the template and content and compiles it into individual HTML, JavaScript and CSS files.</li>
+<li>Then I commit it to Github which serves up the files for free at kohlmann0.github.io.</li>
+</ul>
+
+<p>One advantage to this, is because public Github repositories are free, and because Netlify.com will give you a custom domain name for free, this is all completely free, expandable, and still dynamic through JavaScript to make it seem like any other site.</p>
+
+<p>I&rsquo;d like to talk a bit more about Hugo, Javascript and tips and tricks to give it some dynamic content, so stay tuned for later posts, which I will eventually link below.</p>
+
+<h2 id="some-useful-links">Some useful links</h2>
+
+<ul>
+<li><a href="http://jamstack.org" target="_blank">Jamstack.Org</a> - full of useful resource, best practices, and examples.</li>
+<li><a href="http://www.staticgen.com/" target="_blank">Static Site Generators</a></li>
+<li><a href="http://www.github.com" target="_blank">Github</a> - for hosting your source code.</li>
+<li><a href="http://www.netlify.com" target="_blank">Netlify</a> - for providing you with a free domain name, and linking it to your github account.</li>
+<li><a href="http://www.Travis-ci.org" target="_blank">Travis CI</a> or something similar&hellip; this one is a give or take. You don&rsquo;t really need it, but it can be useful. You really only need it if you need a special step to build your code when your not on your main build machine.</li>
+</ul></div>
+			</div>
+		</div>
+	</div> 
+</div> 
+
+      
+      <footer class="page-footer font-small pt-4 mt-4 top-buffer color-primary"> 
+          <hr class="w-100 clearfix d-md-none">
+      
+          
+          <div class="container text-md-left">
+      
+              
+              <div class="row text-md-left mt-3 pb-3">
+      
+                  
+                  <div class="col-md-4 col-lg-4 col-xl-4 mx-auto mt-4 text-center">
+                      <h6 class="text-uppercase mb-4 font-weight-bold">Michael Kohlmann</h6>
+					  <ul style="list-style-type:none; padding-left: 0;">
+						<li class="list-inline-item">Engineer</li>
+						<li class="list-inline-item">Developer</li>
+						<li class="list-inline-item">Problem Solver</li>
+					  </ul>
+                  </div>
+                  
+      
+      
+                  
+                  <div class="col-md-4 col-lg-4 col-xl-4 mx-auto mt-4 text-center">
+                      <h6 class="text-uppercase mb-4 font-weight-bold"><a href="/services">Services</a></h6>
+                      <h6 class="text-uppercase mb-4 font-weight-bold"><a href="/blog">Blog</a></h6>                      
+                      <h6 class="text-uppercase mb-4 font-weight-bold"><a href="/about">About</a></h6>
+                  </div>
+                  
+      
+                  
+                  <div class="col-md-4 col-lg-4 col-xl-4 mx-auto mt-4 text-center">
+                      <h6 class="text-uppercase mb-4 font-weight-bold">Contact</h6>
+					  <ul style="list-style-type:none; padding-left: 0;">
+						<li class="list-inline-item"><i class="fa fa-home mr-3"></i> Milwaukee, WI, USA</li>
+						<li class="list-inline-item"><a href="https://www.linkedin.com/in/michael-kohlmann-1141305/"><i class="fab fa-linkedin-in mr-3"></i> LinkedIn</a></li>
+					  </ul>
+                  </div>
+                  
+      
+              </div>
+              
+      
+              <hr>
+      
+              <div class="row py-3 d-flex align-items-center">
+      
+                  
+                  <div class="col-md-12 col-lg-12">
+      
+                      					  
+                      <p class="text-center text-md-left grey-text">Content and Layout by <strong>Michael Kohlmann</strong></p>
+					  <p class="text-center text-md-left grey-text">Theme by <a href="https://mdbootstrap.com/material-design-for-bootstrap/"><strong> MDBootstrap.com</strong></a> © 2018 Copyright</p>
+                      <p class="text-center text-md-left grey-text">Icons by <a href="https://fontawesome.com/"><strong> FontAwesome.com</strong></a> © 2018 Copyright</p>
+                      
+      
+                  </div>
+                  
+              </div>
+      
+          </div>
+      
+      </footer>
+      
+</body>
+</html>

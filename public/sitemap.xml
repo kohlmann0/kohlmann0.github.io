@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>http://kohlmann0.github.io/blog/jam-stack_an_introduction/</loc>
+    <lastmod>2018-07-30T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://kohlmann0.github.io/blog/chocolatey_an_introduction/</loc>
+    <lastmod>2018-06-28T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://kohlmann0.github.io/blog/hugo_an_introduction/</loc>
+    <lastmod>2018-03-13T14:08:04-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://kohlmann0.github.io/about/</loc>
+    <lastmod>2018-01-27T18:59:51-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://kohlmann0.github.io/contact/</loc>
+    <lastmod>2018-01-27T18:59:51-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://kohlmann0.github.io/service/robotics/</loc>
+    <lastmod>2018-01-27T18:59:04-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://kohlmann0.github.io/service/mechanical/</loc>
+    <lastmod>2018-01-27T18:59:04-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://kohlmann0.github.io/service/management/</loc>
+    <lastmod>2018-01-27T18:59:04-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://kohlmann0.github.io/service/software/</loc>
+    <lastmod>2018-01-27T18:59:04-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://kohlmann0.github.io/</loc>
+    <lastmod>2018-01-27T17:21:42-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://kohlmann0.github.io/blog/hugo_section_pages/</loc>
+    <lastmod>2018-01-27T17:21:42-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://kohlmann0.github.io/blog/</loc>
+    <lastmod>2018-01-27T17:21:42-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://kohlmann0.github.io/categories/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://kohlmann0.github.io/environments/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://kohlmann0.github.io/languages/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://kohlmann0.github.io/service/</loc>
+    <lastmod>2018-01-27T18:59:04-06:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://kohlmann0.github.io/tags/</loc>
+    <priority>0</priority>
+  </url>
+  
+</urlset>

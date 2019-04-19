@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Services on Michael Kohlmann</title>
+    <link>http://kohlmann0.github.io/service/</link>
+    <description>Recent content in Services on Michael Kohlmann</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 27 Jan 2018 18:59:04 -0600</lastBuildDate>
+    
+	<atom:link href="http://kohlmann0.github.io/service/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Industrial Automation and Robotics</title>
+      <link>http://kohlmann0.github.io/service/robotics/</link>
+      <pubDate>Sat, 27 Jan 2018 18:59:04 -0600</pubDate>
+      
+      <guid>http://kohlmann0.github.io/service/robotics/</guid>
+      <description>Mobile / Personal Robotics Mobile robotics is my current major interest. I am actively seeking opportunities to work with individuals and companies building UAV, UGV, articulated humanoid, and driverless systems.
+Industrial Robotics Custom industrial automation and robotics is where I started. Over 15 years, I&amp;rsquo;ve designed, installed, and programmed well over 20 custom automation systems. From small pick and place assembling units, to entire conveyor lines.
+Major Customers:
+ Harley Davidson GKN Sinter Metals Huf North America Muth Mirror Systems Andis Company  Preferred Robot Suppliers:</description>
+    </item>
+    
+    <item>
+      <title>Mechanical Engineering</title>
+      <link>http://kohlmann0.github.io/service/mechanical/</link>
+      <pubDate>Sat, 27 Jan 2018 18:59:04 -0600</pubDate>
+      
+      <guid>http://kohlmann0.github.io/service/mechanical/</guid>
+      <description>Mechanical Engineering I have worked professionally and designed parts for most manufacturing technologies including milling, grinding, sheet metal forming, plastic and rubber molding, laser and water-jet cutting.
+Over the course of my career, I held the position of Mechanical Engineer, Manufacturing Engineer, Robotics Engineer, and my responsibilities have included everything from design and drafting, to machining and installation, to Continuous Improvement and Supply chain management.
+Certifications  Certified SolidWorks Professional through CATI (2002), and continued to use SolidWorks daily up until 2015.</description>
+    </item>
+    
+    <item>
+      <title>Project and Team Management</title>
+      <link>http://kohlmann0.github.io/service/management/</link>
+      <pubDate>Sat, 27 Jan 2018 18:59:04 -0600</pubDate>
+      
+      <guid>http://kohlmann0.github.io/service/management/</guid>
+      <description>Whether you need a technical lead, or a project/personnel team lead, I&amp;rsquo;ve managed several small teams through out my career, both officially and unofficially.
+I&amp;rsquo;ve been a direct customer contact, and a direct supplier contact. I&amp;rsquo;ve presented solutions to clients, and oversaw installations of million dollar robotic systems.
+Preferred Project Tracking Systems:
+ Team Foundation Server (professionally) Trello (free use) TrelloGantt (free use)  Contact me to discuss your needs.</description>
+    </item>
+    
+    <item>
+      <title>Software Development</title>
+      <link>http://kohlmann0.github.io/service/software/</link>
+      <pubDate>Sat, 27 Jan 2018 18:59:04 -0600</pubDate>
+      
+      <guid>http://kohlmann0.github.io/service/software/</guid>
+      <description>Industries Professionally, I currently work in the Leisure Travel space, creating website for major vacation suppliers. I work daily in the back-end, converting an old COBOL mainframe codebase to a modern Microsoft .NET technology stack. I typically work in the business logic of credit card processing, charter flight booking and availability, and our entire dynamic packaging engine in general.
+As a hobby, I tinker around with robotics, IOT, and some web development.</description>
+    </item>
+    
+  </channel>
+</rss>

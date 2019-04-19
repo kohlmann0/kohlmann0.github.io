@@ -1,0 +1,193 @@
+<html lang="en">
+<head>
+  <title>Chocolatey -- An Introduction</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="/css/scratch.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
+
+  
+  
+</head> 
+<body> 
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container-fluid">
+    
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/index.html">MK</a>
+    </div>
+
+    
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+	
+      <ul class="nav navbar-nav">
+	  <li><a href="/service">Services</a></li>	  
+	  <li class="active"><a href="/blog">Blog<span class="sr-only">(current)</span></a></li>	  
+	  <li><a href="/about">About</a></li>
+    <li><a href="/contact">Contact</a></li>
+      </ul>
+	  
+	  
+	  <script>
+		function doSomething() {
+			alert('Sorry, still working out an efficient way to search static files -- will get back to this in time.');
+			return false;
+		}
+	  </script>
+      <ul class="nav navbar-nav navbar-right">
+		  <form class="navbar-form navbar-right" onsubmit="return doSomething();">
+			<div class="form-group">
+			  <input type="text" class="form-control" placeholder="Search Blog">
+			</div>
+			<button type="submit" class="btn btn-default">Submit</button>
+		  </form>
+      </ul>
+	  
+    </div>
+  </div>
+</nav>
+
+
+<div class="jumbotron text-center color-primary">
+  <p><h1>Michael Kohlmann</h1></p>
+  <p><h2>Engineer, Developer, Problem Solver</h2></p>
+</div>  
+<div class="container">
+<div class ="container">
+	<div class="row">
+		<div class="col-sm-2"></div>
+			<div id="contentList" class="col-sm-8"> 
+				<h2></h2>
+				<div><h1 id="chocolatey">Chocolatey</h1>
+
+<p>What is it, what does it do, and how can it help me as a developer?</p>
+
+<h2 id="what-it-is">What it is</h2>
+
+<p>Chocolatey, despite its candy coated name, is one of the first package managers I&rsquo;ve seen for the Windows environment. If you are familiar with Linux, python, or Node.JS, you&rsquo;ve probably used a package manager before, with commands like&hellip;</p>
+
+<p></p>
+
+<ul>
+<li>apt-get for Linux</li>
+<li>pip for python</li>
+<li>npm for node.js</li>
+<li>nu-get for Visual Studio</li>
+</ul>
+
+<p>For Windows, there hasn&rsquo;t really been much similar. One might argue that the windows store might be considered one, but it&rsquo;s not exactly the same.</p>
+
+<h2 id="i-ve-never-used-a-package-manager-what-does-it-do">I&rsquo;ve never used a package manager, what does it do?</h2>
+
+<p>The short answer is that it&rsquo;s a repository for a variety of different programs. The difference between it, and say the Windows store is that it is decentralized, and maintained by users rather than a single company. In most cases you can run a simple command line string to find, download, install, and configure a program. Chocolately handles all the files and installation. You can also use it to update or uninstall a program already installed by Chocolatey.</p>
+
+<h4 id="okay-but-how-does-that-help-me">Okay, but how does that help me?</h4>
+
+<p>Well, for one thing, it&rsquo;s got some great software in it. Things like Visual Studio code, Chrome and Firefox, Git, Node.Js. I just used it to rebuild this machine I am working on now. Pretty much anything people want to make available, and it&rsquo;s constantly growing.</p>
+
+<p>Secondly, picture this. Because it&rsquo;s all command line, imagine running a script to install and configure an entire new machine. Or 20 new employee machines. Everything I listed above, plus an email client, Slack, VNC player, Putty, Curl, the whole works from one Power Shell script. Your IT guys needs to spin up 20 new identical development boxes? Chocolatey. Need to install some software on a server from a remote command line? Perfect. Picked up a nasty virus, and need to reinstall Windows from scratch, Chocolatey can get you back up and running fast when you&rsquo;re done.</p>
+
+<h4 id="awesome-i-m-convinced-let-me-at-it">Awesome, I&rsquo;m convinced! Let me at it!</h4>
+
+<p>Here is a quick one-liner to install it. From your command line run:</p>
+
+<p><code>@&ldquo;%SystemRoot%\System32\WindowsPowerShell\v1.0\powershell.exe&rdquo; -NoProfile -InputFormat None -ExecutionPolicy Bypass -Command &ldquo;iex ((New-Object System.Net.WebClient).DownloadString(&lsquo;<a href="https://chocolatey.org/install.ps1'))&quot;" target="_blank">https://chocolatey.org/install.ps1'))&quot;</a> &amp;&amp; SET &ldquo;PATH=%PATH%;%ALLUSERSPROFILE%\chocolatey\bin&rdquo;</code></p>
+
+<p>Or From BASH:</p>
+
+<p><code>Set-ExecutionPolicy Bypass -Scope Process -Force; iex ((New-Object System.Net.WebClient).DownloadString(&lsquo;<a href="https://chocolatey.org/install.ps1')" target="_blank">https://chocolatey.org/install.ps1')</a>)</code></p>
+
+<p>Your mileage may vary, but some of my favorites software installs:</p>
+
+<ul>
+<li><a href="https://chocolatey.org/packages/vscode" title="Visual Studio Code Editor" target="_blank">Visual Studio Code</a> (choco install vscode)</li>
+<li><a href="https://chocolatey.org/packages/git" title="GIT Source Control Software" target="_blank">GIT command line tool</a> (choco install git)</li>
+<li><a href="https://chocolatey.org/packages/GitHub" title="GitHub Graphic User Interface App" target="_blank">GitHub Desktop</a> (choco install github)</li>
+<li><a href="https://chocolatey.org/packages/GoogleChrome" title="Google Chrome Browser" target="_blank">Google Chrome</a> (choco install googlechrome)</li>
+<li><a href="https://chocolatey.org/packages/Firefox" title="Mozilla's Firefox Browser" target="_blank">Firefox</a> (choco install firefox)</li>
+<li><a href="https://chocolatey.org/packages/nodejs.install" title="The Node JS engine" target="_blank">Node.JS</a> (choco install nodejs.install)</li>
+</ul>
+
+<p>There are many more. You can check out thier library of packages <a href="https://chocolatey.org/packages" title="Chololatey Package Library" target="_blank">here</a></p></div>
+			</div>
+		</div>
+	</div> 
+</div> 
+
+      
+      <footer class="page-footer font-small pt-4 mt-4 top-buffer color-primary"> 
+          <hr class="w-100 clearfix d-md-none">
+      
+          
+          <div class="container text-md-left">
+      
+              
+              <div class="row text-md-left mt-3 pb-3">
+      
+                  
+                  <div class="col-md-4 col-lg-4 col-xl-4 mx-auto mt-4 text-center">
+                      <h6 class="text-uppercase mb-4 font-weight-bold">Michael Kohlmann</h6>
+					  <ul style="list-style-type:none; padding-left: 0;">
+						<li class="list-inline-item">Engineer</li>
+						<li class="list-inline-item">Developer</li>
+						<li class="list-inline-item">Problem Solver</li>
+					  </ul>
+                  </div>
+                  
+      
+      
+                  
+                  <div class="col-md-4 col-lg-4 col-xl-4 mx-auto mt-4 text-center">
+                      <h6 class="text-uppercase mb-4 font-weight-bold"><a href="/services">Services</a></h6>
+                      <h6 class="text-uppercase mb-4 font-weight-bold"><a href="/blog">Blog</a></h6>                      
+                      <h6 class="text-uppercase mb-4 font-weight-bold"><a href="/about">About</a></h6>
+                  </div>
+                  
+      
+                  
+                  <div class="col-md-4 col-lg-4 col-xl-4 mx-auto mt-4 text-center">
+                      <h6 class="text-uppercase mb-4 font-weight-bold">Contact</h6>
+					  <ul style="list-style-type:none; padding-left: 0;">
+						<li class="list-inline-item"><i class="fa fa-home mr-3"></i> Milwaukee, WI, USA</li>
+						<li class="list-inline-item"><a href="https://www.linkedin.com/in/michael-kohlmann-1141305/"><i class="fab fa-linkedin-in mr-3"></i> LinkedIn</a></li>
+					  </ul>
+                  </div>
+                  
+      
+              </div>
+              
+      
+              <hr>
+      
+              <div class="row py-3 d-flex align-items-center">
+      
+                  
+                  <div class="col-md-12 col-lg-12">
+      
+                      					  
+                      <p class="text-center text-md-left grey-text">Content and Layout by <strong>Michael Kohlmann</strong></p>
+					  <p class="text-center text-md-left grey-text">Theme by <a href="https://mdbootstrap.com/material-design-for-bootstrap/"><strong> MDBootstrap.com</strong></a> © 2018 Copyright</p>
+                      <p class="text-center text-md-left grey-text">Icons by <a href="https://fontawesome.com/"><strong> FontAwesome.com</strong></a> © 2018 Copyright</p>
+                      
+      
+                  </div>
+                  
+              </div>
+      
+          </div>
+      
+      </footer>
+      
+</body>
+</html>
