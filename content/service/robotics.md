@@ -7,20 +7,15 @@ templateType: "Single"
 
 ### Mobile / Personal Robotics ###
 
-Mobile robotics is my current major interest. I am actively seeking opportunities to work with individuals and companies building UAV, UGV, articulated humanoid, and driverless systems.
+I am actively seeking opportunities to work with individuals and companies building UAV, UGV, articulated humanoid, and driverless systems. Current area's of interest include 2D to 3D vision processing, simultaneous localization and mapping (SLAM), and remote operation technologies.
 
+Preferred Tools:
+
+* Robot Operating System (ROS)
 
 ### Industrial Robotics ###
 
-Custom industrial automation and robotics is where I started. Over 15 years, I've designed, installed, and programmed well over 20 custom automation systems. From small pick and place assembling units, to entire conveyor lines.
-
-Major Customers:
-
-* Harley Davidson
-* GKN Sinter Metals
-* Huf North America
-* Muth Mirror Systems
-* Andis Company
+Over 15 years experience, designing, installing, and programming automation systems, from small pick and place assembly units, to entire assembly lines.
 
 Preferred Robot Suppliers: 
 
@@ -42,4 +37,9 @@ Preferred Gipper Technology Suppliers:
 * Schunk
 * RoboHand
 
-[Contact me](/contact) to discuss your needs.
+Preferred Pneumatic Systems:
+
+* SMC
+* Festo
+
+[Contact me](/contact) to discuss your robotics needs.

@@ -18,5 +18,5 @@ Hugo gives you a local build server which is great for debugging and seeing what
 
 
 
-With Travis C.I. (Continuous Integration) you can have your website rebuilt every time you check in changes to github. Travis monitors your repository, and then rebuilds it. What's awesome about that is that you don't have to have your Development machine with you, in order to update your site. You know how you can edit a markdown file right on the github site? Find your minor change, update it where ever, commit the change, and the whole site will compile and rebuild... Also, it's free! How can you go wrong?
+With Netlify you can have your website rebuilt every time you check in changes to github. Netlify monitors your repository, and then rebuilds it after every checkin. What's awesome about that is that you don't have to have your Development machine with you, in order to update your site. You know how you can edit a markdown file right on the github site? Find your minor change, update it where ever, commit the change, and the whole site will compile and rebuild... Also, it's free! How can you go wrong?
 
